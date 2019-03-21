@@ -1,4 +1,4 @@
-function [landGrid]=readshape2(filename,res,buffer)
+function [landGrid]=readshape3(filename,res,buffer)
 % produce landGrid from shapefile
 
     shp_res = shaperead(filename);
