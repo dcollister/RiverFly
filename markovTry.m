@@ -68,6 +68,11 @@ bb=4:6;
 cc=7:9;
 
 
+aaa=[1;4;7];
+bbb=[2,5,8];
+ccc=[3,6,9];
+
+
 for i=2:size(binary3,1)
     for j=1:size(binary3,1)
         if isequal(binary3(i,a),binary(j,a))&&isequal(binary3(i,c),binary3(j,c))
@@ -81,6 +86,10 @@ for i=2:size(binary3,1)
         elseif isequal(binary3(i,aa),binary3(j,aa))&&isequal(binary3(i,bb),binary3(j,bb))
             markovChain(i,j)=1;
         elseif isequal(binary3(i,cc),binary3(j,cc))&&isequal(binary3(i,bb),binary3(j,bb))
+            markovChain(i,j)=1;
+        elseif isequal(binary3(i,aaa),binary3(j,aaa))&&isequal(binary3(i,bbb),binary3(j,bbb))
+            markovChain(i,j)=1;
+        elseif isequal(binary3(i,ccc),binary3(j,ccc))&&isequal(binary3(i,bbb),binary3(j,bbb))
             markovChain(i,j)=1;
         else
             markovChain(i,j)=0;
